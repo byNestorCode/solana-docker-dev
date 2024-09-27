@@ -1,0 +1,22 @@
+services:
+  solana-dev:
+    image: ubuntu:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ROOT_PASSWORD: ${ROOT_PASSWORD}
+    container_name: solana-dev
+    ports:
+      - "2222:22"  # Mapea el puerto SSH
+      - "8899:8899" # RPC URL
+      - "8900:8900" # WebSocket URL
+    restart: always  # Que nunca se nos detenga el mundo
+    volumes:
+      - ./../solana-dev:/home/root/solana-dev  # Mapea el volumen
+      - ./../key.json:/root/.config/solana/id.json
+    environment:
+      - ROOT_PASSWORD=${ROOT_PASSWORD}  # Puedes usar una variable de entorno para la contraseña
+    command: /usr/sbin/sshd -D  # Inicia el servicio SSH
+
+    # Opcional: puedes definir más configuraciones aquí, como redes o dependencias
