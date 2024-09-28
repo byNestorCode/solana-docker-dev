@@ -100,7 +100,7 @@ Una vez hechos los pasos anteriores, vamos a utilizar Powershell o CMD, el que t
     -   ```powershell
         yes
         ```
-Lo anterior solo te lo pedirá la primera vez, así que la siguiente que quieras conectarte solo te pedira la contraseña, hablando de ¿Cúal contraseña? Bueno, vamos a continuar
+Lo anterior solo te lo pedirá la primera vez, así que la siguiente que quieras conectarte solo te pedira la contraseña, hablando de ¿Cuál contraseña? Bueno, vamos a continuar
 
 3. La contraseña es la que configuramos dentro de nuestro archivo .env ¿Recuerdas? está dentro de la carpeta de Docker y su contenido es el siguiente:
     - `ROOT_PASSWORD=`
