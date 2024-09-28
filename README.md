@@ -115,14 +115,7 @@ Listo, tendremos acceso a nuestro 🐋 contenedor de Docker desde nuestra consol
 
 ⚠️ NOTA: recuerda que cualquier cosa que coloques aquí mágicamente aparecerá en tu carpeta solana-dev dentro del repositorio
 
-También usaremos el módulo npm de Anchor y Solana Web3 JS; ¡ambos nos ayudarán a conectar nuestra aplicación web a nuestro programa Solana!
-
-5. Ejecutaremos el siguiente comando:
--   ```bash
-    npm install @project-serum/anchor @solana/web3.js
-    ```
-
-6. Lo siguiente que vamos a hacer es generar una cartera digital Solana local para trabajar. No te preocupes por crear una frase de contraseña (passphrase) por ahora, simplemente da click a "enter" cuando te pregunte.
+5. Lo siguiente que vamos a hacer es generar una cartera digital Solana local para trabajar. No te preocupes por crear una frase de contraseña (passphrase) por ahora, simplemente da click a "enter" cuando te pregunte.
 -   ```bash
     solana-keygen new --outfile /root/.config/solana/id.json --force
     ```
@@ -131,14 +124,21 @@ También usaremos el módulo npm de Anchor y Solana Web3 JS; ¡ambos nos ayudar�
 
 Te invito a revisar tu archivo llamado `key.json`, ahí encontrarás el keipair.
 
-7. Ahora ya solo nos queda crear nuestro proyecto:
+6. Ahora ya solo nos queda crear nuestro proyecto:
 -   ```bash
     anchor init nombre_del_proyecto
     ```
 
-8. Accedemos al proyecto una vez generado:
+7. Accedemos al proyecto una vez generado:
 -   ```bash
     cd nombre_del_proyecto
+    ```
+
+También usaremos el módulo npm de Anchor y Solana Web3 JS; ¡ambos nos ayudarán a conectar nuestra aplicación web a nuestro programa Solana!
+
+8. Ejecutaremos el siguiente comando:
+-   ```bash
+    npm install @project-serum/anchor @solana/web3.js
     ```
 
 9. En este punto, yo tuve que hacer una modificación dentro del archivo `Anchor.toml` que se encuentra dentro de nuestro proyecto:
