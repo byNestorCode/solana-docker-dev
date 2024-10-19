@@ -37,7 +37,7 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustc --version && cargo --version
 
 # Instalar Solana CLI
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.18.18/install)"
+RUN sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
 
 # Configurar el entorno de Solana
 ENV PATH="/root/.local/share/solana/install/active_release/bin:${PATH}"
