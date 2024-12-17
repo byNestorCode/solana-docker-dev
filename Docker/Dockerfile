@@ -26,9 +26,12 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get update && \
     apt-get install -y yarn && \
     apt-get clean
-    
+
+# Eliminar el directorio de instalación de Rust antes de intentar instalarlo:
+RUN rm -rf /root/.cargo /root/.rustup
+
 # instalar Rust
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
 
 # Configurar el entorno
 ENV PATH="/root/.cargo/bin:${PATH}"
