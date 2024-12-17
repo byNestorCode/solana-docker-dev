@@ -124,6 +124,8 @@ Listo, tendremos acceso a nuestro 🐋 contenedor de Docker desde nuestra consol
 
 Te invito a revisar tu archivo llamado `key.json`, ahí encontrarás el keipair.
 
+Además dentro de este punto te invito a crear un archivo `.txt`
+
 6. Ahora ya solo nos queda crear nuestro proyecto:
 -   ```bash
     anchor init nombre_del_proyecto
