@@ -11,6 +11,7 @@ services:
       - "2222:22"  # Mapea el puerto SSH
       - "8899:8899" # RPC URL
       - "8900:8900" # WebSocket URL
+      - "3000:3000" # npm run dev
     restart: always  # Que nunca se nos detenga el mundo
     volumes:
       - ./../solana-dev:/home/root/solana-dev  # Mapea el volumen
