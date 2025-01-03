@@ -64,6 +64,7 @@ Sin embargo quiero que tengas en cuenta algo dentro de `docker-compose.yaml`:
             - "2222:22"  # Mapea el puerto SSH
             - "8899:8899" # RPC URL
             - "8900:8900" # WebSocket URL
+            - "3000:3000" # npm run dev
 ```
 
 - Estos puertos nos ayudarán a acceder a nuestro contenedor por SSH o poder ver lo que desarollemos localmente con nuestro navegador preferido. 
