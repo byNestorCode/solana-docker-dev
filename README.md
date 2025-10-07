@@ -164,6 +164,6 @@ Ahora te invito a volver a ♾️ `vscode`, y observa, mágicamente el proyecto 
 Ahora sí, a darle ¡Éxito Devs! 🚀
 
 # ⚠️ Como recomendación personal
-Para trabajar mejor mis proyectos de solana en web3, descargué aún así todo lo anterior para 🪟 windows, esto para trabajar más cómodo en mi ♾️ `vscode`, si quieres hacerlo tambíen, te invito a ver el siguiente tutorial, no te llevará mucho timempo hacerlo y será una mejor experiencia.
+Para trabajar mejor mis proyectos de solana en web3, descargué aún así todo lo anterior para 🪟 windows, esto para trabajar más cómodo en mi ♾️ `vscode`, si quieres hacerlo tambíen, te invito a ver el siguiente tutorial, no te llevará mucho tiempo hacerlo y será una mejor experiencia.
 
 - Es el repo de Buildspace que te mecioné desde el inicio: 🐙[Click aqui](https://github.com/buildspace/buildspace-projects/blob/main/Solana_And_Web3/es/Section_2/Lesson_1_Get_Local_Solana_Env_Running.md)
